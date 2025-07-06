@@ -1,61 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Grade 12 Algebra – Simultaneous Equations (Mixed Types)</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 40px; background: #fff; color: #222; }
-    h1 { text-align: center; margin-bottom: 40px; }
-    ol { line-height: 1.8; }
-    .type-label { font-weight: bold; color: #2980b9; margin-top: 20px; }
-  </style>
+  <meta charset="UTF-8">
+  <title>Grade 12 Algebra – Simultaneous Equations (Solutions)</title>
 </head>
 <body>
+  <h1>Grade 12 Algebra – Simultaneous Equations (Solutions)</h1>
+  <ol>
 
-  <h1>Grade 12 Algebra – Simultaneous Equations (Mixed Types)</h1>
+    <li><strong>Linear + Linear:</strong><br>
+      Solve:<br>
+      x + y = 10<br>
+      2x - y = 5<br>
+      <strong>Solution:</strong><br>
+      Add equations:<br>
+      x + y + 2x - y = 10 + 5 → 3x = 15 → x = 5<br>
+      Plug into first: y = 10 - 5 = 5<br>
+      <strong>Answer:</strong> x = 5, y = 5
+    </li>
 
-  <div class="type-label">Linear Simultaneous Equations</div>
-  <ol start="1">
-    <li>Solve:<br> x + y = 10 <br> 2x - y = 5</li>
-    <li>Solve:<br> 3x + 2y = 12 <br> 2x - y = 1</li>
-    <li>Solve:<br> x - 3y = 7 <br> 2x + y = 3</li>
-    <li>Solve:<br> 5x - y = 4 <br> 2x + 3y = 12</li>
-    <li>Solve:<br> 4x - 2y = 10 <br> x + y = 2</li>
-    <li>Solve:<br> 6x + 2y = 18 <br> 3x - y = 1</li>
-    <li>Solve:<br> 2a + b = 5 <br> 4a - b = 3</li>
-    <li>Solve:<br> 3x + y = 8 <br> 5x - 2y = 4</li>
-    <li>Solve:<br> x + 2y = 9 <br> 2x - 3y = -4</li>
-    <li>Solve:<br> 2m - 3n = 6 <br> 4m + n = 10</li>
+    <li><strong>Quadratic + Linear:</strong><br>
+      Solve:<br>
+      y = x² + 3<br>
+      2x + y = 7<br>
+      <strong>Solution:</strong><br>
+      Substitute y into second: 2x + x² + 3 = 7<br>
+      → x² + 2x - 4 = 0<br>
+      Solve using quadratic formula:<br>
+      x = [-2 ± √(2² - 4(1)(-4))]/2(1) = [-2 ± √20]/2 = -1 ± √5<br>
+      x ≈ 1.24 or -3.24<br>
+      y = x² + 3 → y ≈ 4.54 or 13.5<br>
+      <strong>Answer:</strong> (1.24, 4.54) or (-3.24, 13.5)
+    </li>
+
+    <li><strong>Exponential + Linear:</strong><br>
+      Solve:<br>
+      2<sup>x</sup> + y = 7<br>
+      x + y = 3<br>
+      <strong>Solution:</strong><br>
+      From second: y = 3 - x<br>
+      Sub into first: 2<sup>x</sup> + 3 - x = 7 → 2<sup>x</sup> = x + 4<br>
+      No algebraic solution → use graphical or numerical methods.<br>
+      Try x = 1 → LHS: 2 + 2 = 4 ❌<br>
+      Try x = 2 → 4 + 1 = 5 ❌<br>
+      Try x ≈ 2.5 → 5.66 + 0.5 ≈ 6.16 ✅<br>
+      Best solution (numerical): x ≈ 2.8, y ≈ 0.2
+    </li>
+
+    <li><strong>Circle (Non-linear) + Linear:</strong><br>
+      Solve:<br>
+      x² + y² = 25<br>
+      x - y = 1<br>
+      <strong>Solution:</strong><br>
+      x = y + 1<br>
+      → (y + 1)² + y² = 25 → y² + 2y + 1 + y² = 25<br>
+      → 2y² + 2y - 24 = 0 → y² + y - 12 = 0<br>
+      Solve: y = [-1 ± √(1 + 48)]/2 = [-1 ± 7]/2 = 3 or -4<br>
+      x = y + 1 → x = 4 or -3<br>
+      <strong>Answers:</strong> (4, 3) and (-3, -4)
+    </li>
+
+    <li><strong>Logarithmic + Linear:</strong><br>
+      Solve:<br>
+      log(x) + y = 4<br>
+      x - y = 2<br>
+      <strong>Solution:</strong><br>
+      x = y + 2 → log(y + 2) + y = 4<br>
+      Solve numerically:<br>
+      Try y = 1 → log(3) + 1 ≈ 0.48 + 1 = 1.48 ❌<br>
+      Try y = 2 → log(4) + 2 ≈ 0.6 + 2 = 2.6 ❌<br>
+      Try y ≈ 2.8 → log(4.8) + 2.8 ≈ 0.68 + 2.8 = 3.48 ❌<br>
+      Try y ≈ 3.3 → log(5.3) + 3.3 ≈ 0.72 + 3.3 = 4.02 ✅<br>
+      So y ≈ 3.3, x = 5.3
+    </li>
+
   </ol>
-
-  <div class="type-label">Quadratic Simultaneous Equations</div>
-  <ol start="11">
-    <li>Solve:<br> y = x² + 3 <br> 2x + y = 7</li>
-    <li>Solve:<br> y = x² - 4x + 1 <br> x + y = 5</li>
-    <li>Solve:<br> y = x² <br> 3x + 2y = 10</li>
-    <li>Solve:<br> y = x² - 2x + 2 <br> x - y = 3</li>
-    <li>Solve:<br> y = 2x² + 1 <br> 4x + y = 13</li>
-    <li>Solve:<br> y = x² + x <br> 2x - y = 1</li>
-    <li>Solve:<br> y = -x² + 4x <br> x + 2y = 8</li>
-    <li>Solve:<br> y = x² - 1 <br> x - y = 2</li>
-    <li>Solve:<br> y = 3x² - 2x + 1 <br> 2x + y = 11</li>
-    <li>Solve:<br> y = x² + 2x <br> x + y = 6</li>
-  </ol>
-
-  <div class="type-label">Exponential Simultaneous Equations</div>
-  <ol start="21">
-    <li>Solve:<br> 2^x + y = 7 <br> x + y = 3</li>
-    <li>Solve:<br> 3^x + 2y = 10 <br> x - y = 1</li>
-    <li>Solve:<br> y = 2^x <br> x + y = 6</li>
-    <li>Solve:<br> y = 3^x <br> 2x + y = 11</li>
-    <li>Solve:<br> 2^x + 3^y = 10 <br> x + y = 3</li>
-    <li>Solve:<br> y = 2^(x+1) <br> x + y = 7</li>
-    <li>Solve:<br> 3^x - y = 4 <br> x + 2y = 8</li>
-    <li>Solve:<br> y = 2^(x-1) <br> x + y = 5</li>
-    <li>Solve:<br> 2^x - 3^y = 1 <br> x + y = 4</li>
-    <li>Solve:<br> y = 3^(x-1) <br> x + y = 6</li>
-  </ol>
-
+  <a href="index.html">⬅ Back to Homepage</a>
 </body>
 </html>
+
 
