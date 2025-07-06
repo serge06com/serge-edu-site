@@ -2,49 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SERGE TUTORIALS - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SERGE TUTORIALS | Grade 12 Algebra</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background: #f9f9f9;
+      margin: 0;
       color: #333;
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #0066cc;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-right: 1px solid #0059b3;
+    }
+    nav a:last-child {
+      border-right: none;
+    }
+    nav a:hover {
+      background: #0059b3;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     }
     h1 {
       text-align: center;
-      color: #2c3e50;
+      color: #004080;
+      margin-bottom: 30px;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      font-size: 18px;
+    section {
+      margin-bottom: 40px;
     }
-    li {
-      margin: 20px 0;
+    h2 {
+      color: #0066cc;
+      border-bottom: 2px solid #0066cc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
     }
-    a {
-      color: #3498db;
+    ol {
+      line-height: 1.6;
+    }
+    .download-links {
+      margin-top: 15px;
+    }
+    .download-links a {
+      display: inline-block;
+      margin-right: 15px;
+      background: #004080;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
+    .download-links a:hover {
+      background: #003366;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
+<header>
   <h1>📚 SERGE TUTORIALS</h1>
+  <p>Grade 12 Algebra – Equations and Inequalities & Simultaneous Equations</p>
+</header>
 
-  <ul>
-    <li><a href="algebra_equations.html">📗 Grade 12 Algebra – Equations and Inequalities (Questions)</a></li>
-    <li><a href="algebra_solutions.html">📙 Grade 12 Algebra – Equations and Inequalities (Solutions)</a></li>
-    <!-- Add more links here as you expand -->
-  </ul>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="algebra_equations.html">Equations & Inequalities</a>
+  <a href="algebra_simultaneous.html">Simultaneous Equations</a>
+</nav>
+
+<main>
+
+<section id="equations">
+  <h2>📗 Equations & Inequalities (Sample Questions)</h2>
+  <ol>
+    <li>Solve for x: x² - 5x + 6 = 0</li>
+    <li>Solve the inequality: x² - 4x - 5 > 0</li>
+    <li>Solve: 2x + 3 < 7</li>
+  </ol>
+  <div class="download-links">
+    <a href="algebra_equations.html">View Full Questions & Solutions</a>
+    <a href="downloads/equations_inequalities_questions.pdf" download>Download Questions PDF</a>
+    <a href="downloads/equations_inequalities_solutions.pdf" download>Download Solutions PDF</a>
+  </div>
+</section>
+
+<section id="simultaneous">
+  <h2>📙 Simultaneous Equations (Sample Questions)</h2>
+  <ol>
+    <li>Solve: x + y = 10, 2x - y = 5</li>
+    <li>Solve: y = x² + 3, 2x + y = 7</li>
+    <li>Solve: 2^x + y = 7, x + y = 3</li>
+  </ol>
+  <div class="download-links">
+    <a href="algebra_simultaneous.html">View Full Questions & Solutions</a>
+    <a href="downloads/simultaneous_equations_questions.pdf" download>Download Questions PDF</a>
+    <a href="downloads/simultaneous_equations_solutions.pdf" download>Download Solutions PDF</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  &copy; 2025 SERGE TUTORIALS | Built with 💡
+</footer>
 
 </body>
 </html>
+
+
+
 
 
 
